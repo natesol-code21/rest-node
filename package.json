@@ -28,9 +28,6 @@
     "nsp": "^2.1.0",
     "supertest": "^3.0.0"
   },
-  "scripts":{
-    "postinstall": "chia mocha supertest install",
-  },
   "repository": {
     "type": "",
     "url": ""
