@@ -18,15 +18,18 @@
     "serve-favicon": "^2.0.1",
     "strong-error-handler": "^2.0.0",
     "loopback-component-explorer": "^4.0.0",
-    "loopback": "^3.0.0",
-    "chai": "^4.1.2",
-    "mocha": "^3.5.0",
-    "supertest": "^3.0.0"
+    "loopback": "^3.0.0"
   },
   "devDependencies": {
+    "chai": "^4.1.2",
     "eslint": "^3.17.1",
     "eslint-config-loopback": "^8.0.0",
-    "nsp": "^2.1.0"
+    "mocha": "^3.5.0",
+    "nsp": "^2.1.0",
+    "supertest": "^3.0.0"
+  },
+  "scripts":{
+    "postinstall": "chia mocha supertest install",
   },
   "repository": {
     "type": "",
