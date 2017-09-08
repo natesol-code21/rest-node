@@ -32,6 +32,9 @@
     "type": "",
     "url": ""
   },
+  "scripts" : {
+      "test" : "node_modules/.bin/mocha -u exports test/**/*"
+    },
   "license": "UNLICENSED",
   "description": "hello-world"
 }
