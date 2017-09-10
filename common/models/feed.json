@@ -11,7 +11,7 @@
       "type": "string",
       "required": true
     },
-    "feed_descriptions": {
+    "feed_descriptions_testing": {
       "type": "string",
       "required": true
     },
