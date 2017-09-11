@@ -5,9 +5,7 @@
   "engines": {
     "node": ">=4"
   },
-  "scripts": {
-    "devtest": "jenkins-mocha --cobertura test/*"
-  },
+
   "dependencies": {
     "compression": "^1.0.3",
     "cors": "^2.5.2",
@@ -25,6 +23,12 @@
     "mocha": "^3.5.0",
     "nsp": "^2.1.0",
     "supertest": "^3.0.0"
+  },
+  "scripts": {
+  "test": "mocha --opts mocha.opts && rm -rf test",
+  "test_jenkins": "jenkins-mocha --cobertura app/test/*.ts --opts mocha.opts",
+  "test:auto": "mocha --opts mocha.opts --watch",
+  "start": "node ."
   },
   "repository": {
     "type": "",
