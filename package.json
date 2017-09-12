@@ -1,7 +1,7 @@
 {
-  "name": "hello-world",
+  "name": "automated testing",
   "version": "1.0.0",
-  "main": "server/server.js",
+  "main": "node .",
   "engines": {
     "node": ">=4"
   },
@@ -24,16 +24,18 @@
     "nsp": "^2.1.0",
     "supertest": "^3.0.0"
   },
+  "engine": {
+    "node": "*",
+    "npm": "*"
+  },
   "scripts": {
-  "test": "mocha --opts mocha.opts && rm -rf test",
-  "test_jenkins": "jenkins-mocha --cobertura app/test/*.ts --opts mocha.opts",
-  "test:auto": "mocha --opts mocha.opts --watch",
-  "start": "node ."
+    "start": "node .",
+    "test": "IP=0.0.0.0 PORT=3000 mocha --timeout 5000 tests/*_test.js"
   },
   "repository": {
-    "type": "",
-    "url": ""
+    "type": "git",
+    "url": "https://github.com/natesol-code21/rest-node.git"
   },
   "license": "UNLICENSED",
-  "description": "hello-world"
+  "description": "automated testing"
 }
