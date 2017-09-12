@@ -1,12 +1,13 @@
 {
   "name": "hello-world",
-  "version": "1.0.0",
-  "main": "node .",
+  "version": "0.0.1",
+  "description": "Node.js sample app for OpenShift 3",
+  "main": "server.js",
+
   "engines": {
     "node": ">=4",
     "npm": "*"
   },
-
   "dependencies": {
     "compression": "^1.0.3",
     "cors": "^2.5.2",
@@ -33,6 +34,6 @@
     "type": "git",
     "url": "https://github.com/natesol-code21/rest-node.git"
   },
-  "license": "UNLICENSED",
+  "homepage": "https://github.com/natesol-code21/rest-node.git",
   "description": "hello-world"
 }
